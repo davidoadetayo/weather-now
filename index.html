@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Weather Now is a responsive weather app built with JavaScript that displays real-time weather, hourly updates, and forecasts for any city. A Frontend Mentor project."
+    />
+    <meta name="theme-color" content=" hsl(243, 27%, 20%)" />
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Weather Now</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a class="logo" href="/">
+          <img
+            class="logo-desktop"
+            src="assets/images/logo.svg"
+            alt="Weather Now Desktop Logo"
+          />
+          <img
+            class="logo-mobile"
+            src="assets/images/favicon.png"
+            alt="Weather Now Mobile Logo"
+          />
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="hero">
+          <h1>How's the sky looking today?</h1>
+
+          <form class="form" autocomplete="off">
+            <img src="assets/images/icon-search.svg" alt="Search icon" />
+            <input
+              type="text"
+              name="search-bar"
+              class="search-area"
+              placeholder="Search for a place..."
+              required
+            />
+            <button
+              type="submit"
+              class="search-button"
+              title="Search"
+              aria-label="Search"
+            >
+              Search
+            </button>
+          </form>
+        </section>
+
+        <section class="weather-container">
+          <div class="left-column">
+            <div class="top-container">
+              <div class="current-weather">
+                <div class="location-date">
+                  <h3>Lagos, Nigeria</h3>
+                  <p>Saturday, Sep 5, 2025</p>
+                </div>
+
+                <div class="current-temp">
+                  <div class="img-container">
+                    <img
+                      class="current-weather-icon"
+                      src="assets/images/icon-sunny.webp"
+                      alt=""
+                    />
+                  </div>
+                  <p class="temp">20°</p>
+                </div>
+              </div>
+
+              <div class="weather-conditions">
+                <div class="condition feels-like">
+                  <span>Feels Like</span>
+                  <p>18°</p>
+                </div>
+
+                <div class="condition humidity">
+                  <span>Humidity</span>
+                  <p>46%</p>
+                </div>
+
+                <div class="condition wind">
+                  <span>Wind</span>
+                  <p>14 km/h</p>
+                </div>
+
+                <div class="condition precipitation">
+                  <span>Precipitation</span>
+                  <p>0 mm</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="daily-forecast">
+              <h3>Daily Forecast</h3>
+
+              <div class="forecast-cards">
+                <div class="day">
+                  <p class="currentDay">Sun</p>
+
+                  <div class="img-container">
+                    <img
+                      src="assets/images/icon-fog.webp"
+                      class="day-icon"
+                      alt="Forecast weather icon"
+                    />
+                  </div>
+
+                  <div class="day-temp">
+                    <p class="max-temp">20°</p>
+                    <p class="min-temp">15°</p>
+                  </div>
+                </div>
+
+                <div class="day">
+                  <p class="currentDay">Mon</p>
+
+                  <div class="img-container">
+                    <img
+                      src="assets/images/icon-fog.webp"
+                      class="day-icon"
+                      alt="Forecast weather icon"
+                    />
+                  </div>
+
+                  <div class="day-temp">
+                    <p class="max-temp">20°</p>
+                    <p class="min-temp">15°</p>
+                  </div>
+                </div>
+
+                <div class="day">
+                  <p class="currentDay">Tue</p>
+
+                  <div class="img-container">
+                    <img
+                      src="assets/images/icon-fog.webp"
+                      class="day-icon"
+                      alt="Forecast weather icon"
+                    />
+                  </div>
+
+                  <div class="day-temp">
+                    <p class="max-temp">20°</p>
+                    <p class="min-temp">15°</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-column">
+            <div class="hourly-forecast">
+              <h3>Hourly Forecast</h3>
+
+              <div class="hourly-cards">
+                <div class="hour-card">
+                  <div class="hour-icon-time">
+                    <div class="hour-icon">
+                      <img src="assets/images/icon-overcast.webp" alt="" />
+                    </div>
+                    <p class="hour-time">2 PM</p>
+                  </div>
+
+                  <p class="hour-temp">20°</p>
+                </div>
+
+                <div class="hour-card">
+                  <div class="hour-icon-time">
+                    <div class="hour-icon">
+                      <img src="assets/images/icon-fog.webp" alt="" />
+                    </div>
+                    <p class="hour-time">3 PM</p>
+                  </div>
+
+                  <p class="hour-temp">20°</p>
+                </div>
+
+                <div class="hour-card">
+                  <div class="hour-icon-time">
+                    <div class="hour-icon">
+                      <img src="assets/images/icon-drizzle.webp" alt="" />
+                    </div>
+                    <p class="hour-time">4 PM</p>
+                  </div>
+
+                  <p class="hour-temp">20°</p>
+                </div>
+
+                <div class="hour-card">
+                  <div class="hour-icon-time">
+                    <div class="hour-icon">
+                      <img src="assets/images/icon-partly-cloudy.webp" alt="" />
+                    </div>
+                    <p class="hour-time">5 PM</p>
+                  </div>
+
+                  <p class="hour-temp">19°</p>
+                </div>
+
+                <div class="hour-card">
+                  <div class="hour-icon-time">
+                    <div class="hour-icon">
+                      <img src="assets/images/icon-rain.webp" alt="" />
+                    </div>
+
+                    <p class="hour-time">6 PM</p>
+                  </div>
+
+                  <p class="hour-temp">18°</p>
+                </div>
+
+                <div class="hour-card">
+                  <div class="hour-icon-time">
+                    <div class="hour-icon">
+                      <img src="assets/images/icon-sunny.webp" alt="" />
+                    </div>
+                    <p class="hour-time">7 PM</p>
+                  </div>
+
+                  <p class="hour-temp">18°</p>
+                </div>
+
+                <div class="hour-card">
+                  <div class="hour-icon-time">
+                    <div class="hour-icon">
+                      <img src="assets/images/icon-snow.webp" alt="" />
+                    </div>
+                    <p class="hour-time">8 PM</p>
+                  </div>
+
+                  <p class="hour-temp">17°</p>
+                </div>
+
+                <div class="hour-card">
+                  <div class="hour-icon-time">
+                    <div class="hour-icon">
+                      <img src="assets/images/icon-storm.webp" alt="" />
+                    </div>
+                    <p class="hour-time">9 PM</p>
+                  </div>
+
+                  <p class="hour-temp">17°</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="config.js"></script>
+    <!-- <script src="script.js" defer></script> -->
+  </body>
+</html>
